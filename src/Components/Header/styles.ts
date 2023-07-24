@@ -4,6 +4,8 @@ export const StyledHeader = styled.header`
   background-color: #fff159;
   position: fixed;
   width: 100%;
+  z-index: 1000;
+  /* opacity: 0; */
 `;
 
 export const Container = styled.header`

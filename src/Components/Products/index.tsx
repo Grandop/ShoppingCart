@@ -16,9 +16,7 @@ function Products() {
 
   return ( 
     <S.Products>
-      {
-        products?.map((item) => <ProductCard {...item} key={item.id}/>)
-      }
+      {products?.map((item) => <ProductCard {...item} key={item.id}/>)}
     </S.Products> 
   );
 }
