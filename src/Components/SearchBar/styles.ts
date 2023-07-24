@@ -9,6 +9,7 @@ export const Form = styled.form`
   box-shadow: 0 1px 2px 0 rgba(0,0,0, 0.4);
   gap: 13px;
   padding-right: 13px;
+  border-radius: 10px;
 `;
 
 export const InputText = styled.input`
@@ -19,6 +20,7 @@ export const InputText = styled.input`
   font-size: 13px;
   font-weight: 500px;
   border-right: 1px solid #ddd;
+  background: none;
 `;
 
 export const SearchButton = styled.button`
