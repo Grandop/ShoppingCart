@@ -1,9 +1,11 @@
-import React from "react";
+import Header from "./Components/Header";
+import Products from "./Components/Products";
 
 function App() {
   return (
     <>
-      <h1>ALOU</h1>
+      <Header/>
+      <Products/>
     </>
   )
 }
