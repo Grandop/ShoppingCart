@@ -1,18 +1,25 @@
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import * as S from './styles';
+import { ProductsInterface } from '../../interfaces/ProductsInterface';
 
-function ProductCard() {
+
+function ProductCard({
+  title,
+  price,
+  thumbnail
+}: ProductsInterface) {
+
   return ( 
     <S.Container>
       
       <S.CardImage 
-        src="http://http2.mlstatic.com/D_809326-MLA46115014340_052021-W.jpg" 
+        src={thumbnail}
         alt='produto'
       />
 
       <S.CardInfo>
-        <S.CardPrice>R$ 200</S.CardPrice>
-        <S.CardTitle>Produto</S.CardTitle>
+        <S.CardPrice>{price}</S.CardPrice>
+        <S.CardTitle>{title}</S.CardTitle>
       </S.CardInfo>
 
       <S.ButtonAddCard>
