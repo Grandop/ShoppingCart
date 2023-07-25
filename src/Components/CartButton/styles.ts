@@ -19,8 +19,6 @@ export const CartCount = styled.span`
   font-weight: 500;
   min-width: 15px;
   min-height: 15px;
-  /* height: 15px;
-  width: 15px; */
   position: absolute;
   border-radius: 15px;
   top: 0;

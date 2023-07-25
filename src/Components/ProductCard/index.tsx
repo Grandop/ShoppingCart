@@ -2,6 +2,8 @@ import { BsFillCartPlusFill } from 'react-icons/bs';
 import * as S from './styles';
 import { ProductsInterface } from '../../interfaces/ProductsInterface';
 import formatCurrency from '../../utils/formatPrice';
+// import { useContext } from 'react';
+// import { ShoppingCartContext } from '../../context/ShoppingCartContext';
 
 
 function ProductCard({ title, price, thumbnail }: ProductsInterface) {
@@ -16,7 +18,7 @@ function ProductCard({ title, price, thumbnail }: ProductsInterface) {
       />
 
       <S.CardInfo>
-        <S.CardPrice>{formatCurrency(price, 'BRl')}</S.CardPrice>
+        <S.CardPrice>{formatCurrency(price, 'BRL')}</S.CardPrice>
         <S.CardTitle>{title}</S.CardTitle>
       </S.CardInfo>
 

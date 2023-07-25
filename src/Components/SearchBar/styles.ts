@@ -31,4 +31,5 @@ export const SearchButton = styled.button`
   align-items: center;
   justify-content: center;
   color: #333;
+  cursor: pointer;
 `;
