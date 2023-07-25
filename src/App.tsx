@@ -1,3 +1,4 @@
+import Cart from "./Components/Cart";
 import Header from "./Components/Header";
 import Products from "./Components/Products";
 import { ShoppingCartContextProvider } from "./context/ShoppingCartContext";
@@ -7,6 +8,7 @@ function App() {
     <ShoppingCartContextProvider>
       <Header/>
       <Products/>
+      <Cart/>
     </ShoppingCartContextProvider>
   )
 }
