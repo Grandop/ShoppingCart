@@ -5,7 +5,6 @@ export const StyledHeader = styled.header`
   position: fixed;
   width: 100%;
   z-index: 1000;
-  /* opacity: 0; */
 `;
 
 export const Container = styled.header`

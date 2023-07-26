@@ -1,15 +1,23 @@
-import { styled } from "styled-components";
+import { styled, css } from "styled-components";
 
-export const Cart = styled.div`
-  width: 100%;
-  max-width: 330px;
-  background-color: #fff;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 100px 20px;
-  overflow: auto;
+interface Animated {
+  anim: boolean;
+}
+
+export const Cart = styled.div<Animated>`
+  ${({ anim }) => css`
+    width: 100%;
+    max-width: 330px;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 100px 20px;
+    overflow: auto;
+    transform: translateX(${anim ? "100%" : "0"});
+    transition: all 500ms ease;
+  `}
 `;
 
 export const CartResume = styled.div`

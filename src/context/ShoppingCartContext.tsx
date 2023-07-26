@@ -12,6 +12,8 @@ export interface ShoppingCartData {
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   productSelected: ProductsInterface[] | undefined;
   setProductSelected: React.Dispatch<React.SetStateAction<ProductsInterface[] | undefined>>;
+  modalIsHidden: boolean;
+  setModalIsHidden: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const ShoppingCartContext = createContext<ShoppingCartData>(
@@ -21,14 +23,17 @@ export const ShoppingCartContextProvider = ({ children }: ChildrenProps) => {
   const [products, setProducts] = useState<ProductsInterface[] | undefined>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [productSelected, setProductSelected] =  useState<ProductsInterface[] | undefined>([]);
-  
+  const [modalIsHidden, setModalIsHidden] = useState(true);
+
   const value = {
     products,
     setProducts,
     loading,
     setLoading,
     productSelected,
-    setProductSelected
+    setProductSelected,
+    modalIsHidden,
+    setModalIsHidden
   }
 
   return (
