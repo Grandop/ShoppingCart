@@ -3,7 +3,7 @@ import { ProductsInterface } from '../../interfaces/ProductsInterface';
 import formatImage from '../../utils/formatImage';
 import formatCurrency from '../../utils/formatPrice';
 import * as S from './styles';
-import { BsCartDashFill } from 'react-icons/bs';
+import { BsFillTrash3Fill } from 'react-icons/bs';
 import { ShoppingCartContext } from '../../context/ShoppingCartContext';
 
 function CartItem({ title, price, thumbnail, id }: ProductsInterface) {
@@ -29,7 +29,7 @@ function CartItem({ title, price, thumbnail, id }: ProductsInterface) {
           onClick={() => handleRemoveProduct()}
           type='button'
         >
-          <BsCartDashFill/>
+          <BsFillTrash3Fill/>
         </S.ButtonRemoveItem>
 
       </S.CartItemContent>

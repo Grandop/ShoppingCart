@@ -24,7 +24,8 @@ function Products() {
 
   return ( 
     <S.Products>
-      {products?.map((item) => <ProductCard {...item} key={item.id}/>)}
+      {products?.map((item) => <ProductCard {...item} key={item.id}/>)} 
+      {products?.length === 0 && <S.LabelError>Não há anúncios que correspondam à sua busca</S.LabelError>}
     </S.Products> 
   );
 }

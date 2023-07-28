@@ -13,6 +13,7 @@ function SearchBar() {
     setLoading(true)
     const products = await fetchProducts.getProducts(searchValue);
     setProducts(products);
+    console.log(products);
     setLoading(false);
   };
 
